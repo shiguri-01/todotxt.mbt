@@ -9,7 +9,7 @@
 //   "moonbitlang/x@0.4.6",
 // }
 
-name = "shiguri-01/tododottxt"
+name = "shiguri-01/todotxt"
 
 version = "0.1.0"
 
@@ -19,6 +19,6 @@ repository = ""
 
 license = "Apache-2.0"
 
-keywords = [ ]
+keywords = [ "todo", "todotxt", "todos" ]
 
-description = ""
+description = "A small parser for the todo.txt"

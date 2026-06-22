@@ -1,5 +1,5 @@
 // Generated using `moon info`, DON'T EDIT IT
-package "shiguri-01/tododottxt"
+package "shiguri-01/todotxt"
 
 import {
   "moonbitlang/core/debug",
