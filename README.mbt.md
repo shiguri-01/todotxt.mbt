@@ -10,14 +10,15 @@ moon add shiguri-01/todotxt
 
 ## Usage
 
-```moonbit nocheck
+```moonbit check
 ///|
-let task = @tododottxt.parse_task(
-  "(A) 2026-06-22 Write README +tododottxt @dev",
-)
+let _task : @todotxt.Task = @todotxt.parse_task(
+  "(A) 2026-06-22 Write README +todotxt @dev",
+) catch {
+  ParseError::EmptyLine => abort("Task must not be empty")
+  ParseError::MultipleLines => abort("Task must be a single line")
+}
 ```
-
-Empty input and multi-line input raise `ParseError`.
 
 ## License
 
